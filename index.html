@@ -1,16 +1,81 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="REFRESH" content="2;url=https://whatsapp.com/channel/0029VaPCBqw3gvWhddkWsu2L">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://whatsapp.com/channel/0029VaPCBqw3gvWhddkWsu2L">
-    <script type="text/javascript">
-        window.location.href = "https://whatsapp.com/channel/0029VaPCBqw3gvWhddkWsu2L";
-    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            color: #2d2e2f;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 5px solid #0b3a3c;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 1s ease-out;
+        }
+
+        .redirect-message {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #31c9df;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        a:hover {
+            color: #176e7b;
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="https://whatsapp.com/channel/0029VaPCBqw3gvWhddkWsu2L">link to WhatsApp Channel</a>.</p>
+    <div id="loader" class="loader"></div>
+    <p class="redirect-message">Redirecting to testimonial archives, please wait...</p>
+    <a href="https://www.painshop.id" target="_blank">Visit us painshop.id</a>
+    <script>
+        setTimeout(() => {
+            document.getElementById('loader').classList.add('fade-out');
+        }, 1000);
+    </script>
 </body>
 </html>
